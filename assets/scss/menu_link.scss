@@ -1,0 +1,27 @@
+a {
+    text-decoration: none;
+}
+
+.menu-link {
+    color: #fff;
+    line-height: 2;
+    position: relative;
+}
+
+.menu-link::before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    transition: transform .4s, opacity .4s;
+    opacity: 0;
+}
+
+.menu-link:hover::before {
+    transform: translateY(-.25rem);
+    opacity: 1;
+}

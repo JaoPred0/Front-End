@@ -1,0 +1,58 @@
+footer {
+    background-color: $header_footer;
+    padding: 5em;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            color: rgb(4, 19, 4);
+        }
+
+        img {
+            width: 100px;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+
+            a {
+                color: #fff;
+            }
+        }
+
+        .trabalhador {
+            p {
+                padding: 10px 0;
+            }
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            input {
+                border: none;
+                border-radius: 5px;
+                padding: 10px;
+                width: 350px;
+            }
+
+            button {
+                position: relative;
+                background: none;
+                right: 2.2em;
+                padding: 10px 0px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+        }
+        .projeto {
+            padding: 40px 0;
+        }
+    }
+}

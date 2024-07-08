@@ -1,0 +1,18 @@
+main {
+    .ano-lancamento {
+        padding: 35px 0;
+
+        .ano-lancamento-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+            color: #000;
+            padding: 5vh;
+            margin: 100px 0;
+            h2 {
+                font-size: 15vh;
+            }
+        }
+    }
+}

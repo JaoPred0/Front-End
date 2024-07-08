@@ -1,0 +1,42 @@
+main {
+    .diretor {
+        .container {
+            .tooltip-container {
+                position: relative;
+                cursor: pointer;
+                transition: background 0.3s;
+                font-size: 17px;
+                padding: 1em 1.8em;
+                background-color: $header_footer;
+
+                .tooltip {
+                    background-color: $header_footer;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-10%);
+                    opacity: 0;
+                    pointer-events: none;
+                    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+                    color: #fff;
+                    border-radius: 0.3em;
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    font-size: 14px;
+                    max-width: 100%;
+                    padding: 0.5em 1em;
+                    white-space: nowrap;
+                }
+
+                &:hover {
+                    .tooltip {
+                        top: -100%;
+                        opacity: 1;
+                        pointer-events: auto;
+                        transform: translateX(-50%) translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}

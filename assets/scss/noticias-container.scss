@@ -1,0 +1,184 @@
+.noticias-container {
+    display: flex;
+    flex-direction: column;
+    padding: 12vh 0;
+
+    
+
+    h1 {
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: green;
+            font-weight: 700;
+            cursor: grab;
+        }
+
+        &:active {
+            cursor: grabbing;
+        }
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2em 0;
+
+        nav {
+            border-radius: 10px;
+            border: solid;
+            padding: 10px 40px;
+
+            ul {
+                display: flex;
+                list-style: none;
+                gap: 2em;
+                align-items: center;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .active {
+            background-color: $header_footer;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .no-active {
+            background: none;
+            padding: 0;
+            border-radius: 0;
+        }
+
+    }
+
+    .container-geral {
+        padding: none;
+
+        .curiosidades {
+            .content-conteudo {
+                display: flex;
+                flex-direction: column;
+                gap: 2em;
+                padding: 5vh;
+                align-items: center;
+
+                .button-list {
+                    button {
+                        padding: 3vh;
+                        border-radius: 10px;
+                        border: solid;
+                        cursor: pointer;
+                        background: $header_footer;
+                        color: #fff;
+                        font-size: 18px;
+                        transition: all 0.1s ease-in-out;
+                        filter: drop-shadow(#fff 0 5px);
+
+                        &:hover {
+                            transform: scale(1.05);
+
+                            &:active {
+                                transform: scaleY(0.95);
+                                filter: drop-shadow(#fff 0 0px);
+                            }
+                        }
+                    }
+                }
+
+                .text {
+                    width: 50%;
+                }
+            }
+        }
+
+        .noticias-importantes {
+
+            .content-grup {
+                display: flex;
+                grid-gap: 1em;
+                padding: 5em 2em;
+
+                .content-conteudo {
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+                    align-items: center;
+                    border: $header_footer solid 3px;
+                    border-radius: 10px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        border: #007300 solid 3px;
+                        box-shadow: #007300 0 3px 3px 0;
+                    }
+                }
+            }
+
+            .content-conteudo {
+                display: flex;
+                flex-direction: column;
+
+                h2 {
+                    font-size: 1.6em;
+                    font-weight: 600;
+                    text-align: center;
+                    padding: 0 0 10px 0;
+
+                }
+
+                p {
+                    padding: 10px 0;
+                }
+
+                img {
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .btn {
+                display: flex;
+                justify-content: center;
+
+                button {
+                    background: none;
+                    width: 40%;
+                    border: 3px solid $header_footer;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    font-size: 1.2em;
+                    font-weight: 600;
+                    color: #fff;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: $header_footer;
+                        border: #007300 solid 3px;
+                        box-shadow: #007300 0 3px 3px 0;
+                    }
+
+                    &:active {
+                        transform: scale(0.9);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .content {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+}

@@ -9,26 +9,332 @@
     <title>Document</title>
 </head>
 
-<body>
+<body id="topo">
     <header>
         <div class="logo">
             <img src="assets/img/logo.png" alt="Logo">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#" class="menu-link">Home</a></li>
-                <li><a href="#" class="menu-link">Elenco</a></li>
-                <li><a href="#" class="menu-link">Trailer & Sinopse</a></li>
-            </ul>
-        </nav>
         <div class="search">
-            <input type="text" placeholder="Pesquisar">
+            <input type="text" placeholder="Pesquisar (não funciona)">
             <button>
                 <i class="fa fa-search" aria-hidden="true"></i>
             </button>
         </div>
+        <div class="container">
+            <div class="menu-container">
+                <button class="menu-button">Menu</button>
+                <div class="menu-content">
+                    <a href="index.html">
+                        Home
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </a>
+                    <a href="elenco.html">
+                        Elenco
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                    </a>
+                    <a href="trailer&sinopse.html">
+                        Trailer & Sinopse
+                        <i class="fa fa-video-camera" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
-    <script src="assets/js/index.js"></script>
+    <nav class="menuNav">
+        <ul>
+            <li><a href="#noticias" class="menu-link">Noticias</a></li>
+            <li><a href="#filme" class="menu-link">Sobre o Filme</a></li>
+            <li><a href="#diretor" class="menu-link">Diretor</a></li>
+            <li><a href="#ano" class="menu-link">Ano de Lançamento</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active"><img src="assets/img/slide1.png" alt="Foto 1"></div>
+                <div class="slide"><img src="assets/img/slide2.png" alt="Foto 2"></div>
+                <div class="slide"><img src="assets/img/slide3.png" alt="Foto 3"></div>
+            </div>
+            <button class="prev" onclick="mudarSlide(-1)"><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+            <button class="next" onclick="mudarSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+        </div>
+        <!-- Noticias -->
+        <div class="noticias-container" id="noticias">
+            <h1>Notícias</h1>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="active" id="noticias-active" data-target="noticias-importantes">Notícias Importantes
+                        </li>
+                        <li id="noticias-active" data-target="curiosidades">Curiosidades</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="container-geral">
+                <div class="content noticias-importantes active">
+                    <h2>Notícias Importantes</h2>
+                    <hr>
+                    <div class="content-grup">
+                        <div class="content-conteudo">
+                            <h2>Obituário de Derrick J. Wyatt</h2>
+                            <p>Mais de sete meses depois da morte de Derrick J. Wyatt, diretor de arte de Ben 10:
+                                Omniverse, seu obituário foi disponibilizado publicamente por sua irmã Denise.</p>
+                            <img src="assets/img/sim.webp" alt="Foto de Derrick em seu obituário.">
+                            <p>"Finalmente nos reunimos e postamos isso. Para ser honesta, eu realmente não queria, mas
+                                estou feliz que fizemos (mesmo que tenha sido muito difícil escrever)", disse Denise no
+                                Twitter.[1] O texto conta uma breve história da infância e da carreira de Wyatt e pode
+                                ser acessado clicando aqui. Leia o texto na íntegra e traduzido abaixo:</p>
+                            <p>"Wyatt, Derrick James 10/08/1972 - 16/12/2021 Burbank, CA</p>
+                            <p>Derrick James Wyatt, mais conhecido por seu papel como diretor de arte na série
+                                Transformers: Animated, faleceu em 16 de dezembro de 2021, aos 49 anos. Derrick nasceu
+                                em 10 de agosto de 1972 em Traverse City, Michigan. A família Wyatt se mudou para Paw
+                                Paw, Michigan, onde Derrick frequentou a escola, se formando com a turma de 1990. Ele
+                                amava desenhar desde cedo e era especialmente apaixonado por quadrinhos e animações. Ele
+                                frequentou a Joe Kubert School of Cartoon and Graphic Art (agora conhecida como The
+                                Kubert School) de 1994 - 96. Depois de sair da escola, Derrick se mudou para Burbank,
+                                Califórnia e fez estágio na Spumco, Inc. Ele passou a trabalhar como designer de
+                                personagens na série Mucha Lucha (2002) e então em Os Jovens Titãs (2003 - 2006), onde
+                                com frequência fazia os designs das formas animais de Mutano, divertidamente incluindo
+                                seu animal favorito, o porquinho-da-índia. Fã de Transformers desde a animação original,
+                                Derrick estava animado por ser contratado como diretor de arte e designer de personagens
+                                principal para Transformers: Animated (2007 - 2010), muitas vezes chamando-o de seu
+                                emprego dos sonhos. Ele passaria a trabalhar como designer de personagens principal para
+                                Scooby Doo! Mistério S/A (2010 - 2012) e como diretor de arte e designer de personagens
+                                em Ben 10: Omniverse (2012 - 2014), entre outros.</p>
+
+                        </div>
+                        <div class="content-conteudo">
+                            <h2>Dia de Dwayne McDuffie</h2>
+                            <img src="assets/img/sim2.webp">
+                            <p>Hoje, Dwayne McDuffie, um lendário roteirista e criador de quadrinhos, estaria
+                                completando 60 anos de idade. Conhecido por seu trabalho em "Ben 10: Força Alienígena" e
+                                "Ben 10: Supremacia Alienígena", McDuffie faleceu em 21 de fevereiro de 2011, um dia
+                                após seu 49º aniversário, devido a complicações de uma cirurgia de emergência no
+                                coração.</p>
+                            <p>McDuffie escreveu dez episódios de "Força Alienígena" e nove de "Supremacia Alienígena",
+                                todos essenciais para o enredo dessas séries. Para "Ben 10: Omniverse", ele colaborou
+                                com sua esposa Charlotte Fullerton e seu melhor amigo Matt Wayne nos dois primeiros
+                                episódios. Embora tenha contribuído com conceitos importantes para a quarta série da
+                                franquia, Dwayne faleceu antes que os últimos episódios de "Supremacia Alienígena"
+                                fossem ao ar.</p>
+                            <p>Em 1993, McDuffie cofundou a Milestone Media, uma companhia de quadrinhos dedicada à
+                                representatividade das minorias raciais. Durante esse período, ele criou personagens
+                                icônicos para a DC Comics, como Super Choque, Ícone e Hardware.</p>
+                            <p>Além de seu trabalho em quadrinhos, McDuffie também fez contribuições significativas para
+                                animações, incluindo "Super Choque", "Jovens Titãs", "O Que Há de Novo, Scooby-Doo?",
+                                "Liga da Justiça" e "Liga da Justiça Sem Limites". Em 2014, foi criado o Dwayne McDuffie
+                                Award for Diversity in Comics, que premia anualmente quadrinhos que promovem a
+                                diversidade e inclusão através de seus personagens e histórias. </p>
+                            <p>A dedicação de Dwayne McDuffie à representatividade e à qualidade narrativa deixou um
+                                legado duradouro no mundo dos quadrinhos e das animações.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content curiosidades">
+                    <h2>Curiosidades</h2>
+                    <hr>
+                    <div class="content-conteudo">
+                        <div class="button-list">
+                            <button id="btn-curiosidade">Clique no botão para uma curiosidades aleatoria</button>
+                        </div>
+                        <div class="text">
+                            <p id="p-curiosidade">Por algum motivo (mais provável que seja um erro de coloração) o
+                                capacete de XLR8 é verde no jogo: Ao Resgate, Ben!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sobre o filme -->
+        <div class="sobre-o-filme container" id="filme">
+            <h2>Sobre a Serie</h2>
+            <hr>
+            <div class="content-conteudo">
+                <div class="text">
+                    <p>Ben 10: Omniverse" é a quarta série da franquia "Ben 10", produzida pelo Cartoon Network. Ela
+                        apresenta uma abordagem renovada das aventuras de Ben Tennyson, um garoto que pode se
+                        transformar em várias formas alienígenas graças ao Omnitrix, um dispositivo extraterrestre. Aqui
+                        estão alguns pontos principais sobre "Ben 10: Omniverse.</p>
+                </div>
+                <div class="grid">
+                    <div class="item">
+                        <h2>Enredo e Ambientação</h2>
+                        <p>Omniverse" introduz uma nova arte e estilo de animação, explorando eventos após os
+                            acontecimentos de "Supremacia Alienígena". Ben agora tem 16 anos e enfrenta desafios mais
+                            maduros enquanto continua a usar o Omnitrix para proteger a Terra de ameaças alienígenas.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h2>Personagens Principais</h2>
+                        <p>Além de Ben Tennyson, a série destaca seu parceiro Rook Blonko, um Plumber da raça
+                            Revonnahgander. Juntos, eles exploram diferentes galáxias e enfrentam inimigos poderosos.
+                        </p>
+                    </div>
+                    <div class="item">
+                        <h2>Vilões e Aliados</h2>
+                        <p>"Omniverse" apresenta novos vilões e aliados, expandindo o universo de Ben 10. Personagens
+                            como Khyber, um caçador de recompensas com um animal alienígena chamado Zed, desafiam Ben de
+                            novas maneiras.</p>
+                    </div>
+                    <div class="item">
+                        <h2>Temas e Mensagens</h2>
+                        <p>A série aborda temas de responsabilidade, crescimento pessoal e amizade, enquanto Ben navega
+                            por suas aventuras e aprende lições importantes ao longo do caminho.</p>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="./assets/img/aaa.jpg" alt="Imagem 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/th.jpg" alt="Imagem 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/bb.jpg" alt="Imagem 3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/cc.jpg" alt="Imagem 4">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/img/dd.jpg" alt="Imagem 4">
+                        </div>
+                    </div>
+                    <button id="prevBtn" class="carousel-btn"><i class="fa fa-arrow-left"></i></button>
+                    <button id="nextBtn" class="carousel-btn"><i class="fa fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sobre o diretor -->
+        <div class="diretor container" id="diretor">
+            <h2>Diretor</h2>
+            <hr>
+            <div class="diretor">
+                <div class="container">
+                    <h2>Derrick J. Wyatt</h2>
+                    <div class="diretor-info">
+                        <div class="text-container">
+                            <div class="text">
+                                <p>Derrick James Wyatt (10 de agosto de 1972, Traverse City, Michigan – 16 de dezembro
+                                    de
+                                    2021)
+                                    foi o diretor de arte da série Ben 10: Omniverse, que também trabalhou em
+                                    Transformers
+                                    Animated e Scooby-Doo: Mistério SA. Ele considera as roqueiras japonesas Ami Onuki e
+                                    Yumi
+                                    Yoshimura como compositoras de Ben 10: Omniverse.</p>
+                                <img src="assets/img/" alt="">
+                            </div>
+                            <div class="text">
+                                <p>Além de dirigir a arte da série, ele também esteve envolvido em todos os pontos
+                                    relacionados ao desenvolvimento da história, como a criação de personagens, nomes,
+                                    episódios, arcos e outros detalhes, juntamente com Matt Wayne, Charlotte Fullerton e
+                                    Matt Youngberg, tendo forte influência em diversos episódios.</p>
+                                <img src="assets/img/" alt="">
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <ul>
+                                <li class="menu-link" data-target="morte">Morte</li>
+                                <li class="menu-link" data-target="trabalho">Alguns Trabalho</li>
+                            </ul>
+                        </div>
+                        <div class="content active" id="morte">
+                            <div class="conteudo">
+                                <h2>Morte</h2>
+                                <p>Tragicamente, Derrick faleceu em 16 de dezembro de 2021 devido a um ataque cardíaco.
+                                    Sua morte foi anunciada em 26 de dezembro de 2021 por seu amigo Josh Perez. Ele
+                                    deixa sua irmã.</p>
+                            </div>
+                        </div>
+                        <div class="content" id="trabalho">
+                            <div class="conteudo">
+                                <h2>Alguns Trabalho</h2>
+                                <ul>
+                                    <li>Os Jetsons (designer de background e layout)</li>
+                                    <li>Mucha Lucha! (designer de personagens em 5 episódios)</li>
+                                    <li>Tenacious D: The Complete Masterworks (designer de personagem),</li>
+                                    <li>A Mansão Foster Para Amigos Imaginários (designer de personagens em um episódio)
+                                    </li>
+                                    <li>Os Jovens Titãs (designer de personagens)</li>
+                                    <li>Legião de Super Heróis (designer de personagens)</li>
+                                    <li>Transformers Animated (designer de personagens e colorista)</li>
+                                    <li>Ben 10: Força Alienígena (designer de personagens em 3 episódios)</li>
+                                    <li>Ben 10: Supremacia Alienígena (designer de personagens em um episódio)</li>
+                                    <li>Scooby Doo! Mistério S/A (supervisor de design de personagens)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tooltip-container">
+                        <span class="tooltip">Frase frequentemente usada por Derrick em seu Ask em seus momentos de
+                            raiva para responder perguntas já esclarecidas no programa.</span>
+                        <span class="text">WATCH THE SHOW!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ano de Lancamento -->
+
+        <div class="ano-lancamento container" id="ano">
+            <h2>Ano de Lançamento</h2>
+            <hr>
+            <div class="ano-lancamento-content">
+                <h2>22 de Setembro de 2012</h2>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="conteudo">
+                <img src="assets/img/logo.png" alt="logo">
+                <div class="trabalhador">
+                    <h2>Trabalhador</h2>
+                    <p>João Pedro</p>
+                    <p>Ótavio Carvalho</p>
+                </div>
+            </div>
+            <div class="conteudo">
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="index.html" class="menu-link">Home</a></li>
+                    <li><a href="elenco.html" class="menu-link">Elenco</a></li>
+                    <li><a href="trailer&sinopse.html" class="menu-link">Trailer & Sinopse</a></li>
+                </ul>
+            </div>
+            <div class="conteudo">
+                <div class="search">
+                    <input type="text" placeholder="Pesquisar (não funciona)">
+                    <button>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </div>
+                <div class="projeto">
+                    <h2>Projeto GitHub</h2>
+                    <a href="https://github.com/JaoPred0/Front-End" class="menu-link">Front-End</a>
+                </div>
+            </div>
+            <div class="conteudo">
+                <a href="#topo" class="menu-link topo">
+                    <p>Topo <i class="fa fa-arrow-up" aria-hidden="true"></i></p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <div class="autorais">
+        <p>© 2024 - João Pedro & Ótavio Carvalho</p>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/menu-container.js"></script>
+    <script src="./assets/js/button-curiosidade.js"></script>
 </body>
 
 </html>

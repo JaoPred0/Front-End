@@ -1,0 +1,21 @@
+main {
+    .elenco {
+        .conainer-elenco {
+            display: flex;
+            align-items: center;
+            padding: 3em 0;
+            justify-content: space-around;
+            div {
+                width: 60%;
+            }
+            img {
+                width: 15%;
+                border-radius: 10px;
+            }
+        }
+        h2 {
+            padding: 10px;
+            text-align: center;
+        }
+    }
+}

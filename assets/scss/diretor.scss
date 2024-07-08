@@ -1,0 +1,59 @@
+main {
+    .diretor {
+        .container {
+            .tooltip-container {
+                margin: 0;
+                // ./tooltip.scss
+            }
+
+            .diretor-info {
+                .text-container {
+                    padding: 10px 0;
+                    display: flex;
+
+                    .text {
+                        margin: 0 0 0 10px;
+                    }
+                }
+
+                .menu {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    ul {
+                        border: solid $header_footer 3px;
+                        border-radius: 5px;
+                        padding: 10px 35px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        list-style: none;
+                        gap: 70px;
+                        cursor: pointer;
+                    }
+                }
+
+                .content {
+                    display: none;
+                }
+
+                .active {
+                    display: block;
+
+                    .conteudo {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 35px;
+
+                        h2 {
+                            font-size: 30px;
+                            padding: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

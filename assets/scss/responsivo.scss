@@ -1,0 +1,54 @@
+@media (max-width: 700px) {
+
+    // Header 
+    header {
+        flex-direction: column;
+
+        .container {
+            padding: 10px 0;
+        }
+    }
+
+    // main 
+    main {
+        .container-geral {
+            .noticias-importantes {
+
+                .content-grup {
+                    flex-direction: column;
+
+                    .content-conteudo {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sobre-o-filme {
+            .content-conteudo {
+                padding: 35px;
+
+                .grid {
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 1fr;
+                }
+            }
+        }
+
+        .diretor {
+            .container {
+                .tooltip-container {
+                   display: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            flex-direction: column;
+        }
+    }
+}
